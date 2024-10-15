@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Carrossel de Imagens - Natureza</title>
+</head>
+<body>
+    <header>
+        <h1>Beleza da Natureza</h1>
+    </header>
+    <div class="carrossel">
+        <div class="imagens">
+            <div class="imagem-container">
+                <img src="https://ibdn.org.br/wp-content/uploads/2021/01/bg-er.jpg" alt="Paisagem 1">
+            </div>
+            <div class="imagem-container">
+                <img src="https://ibdn.org.br/wp-content/uploads/2021/01/bg-neutro-carbono.jpg" alt="Paisagem 2">
+                <div class="texto-sobre-imagem">
+                    <p> O Selo Verde é um programa de Educação Ambiental para a Sustentabilidade Empresarial.  </p>
+                    <a href="https://ibdn.org.br/selo-empresa-parceira-da-natureza/" class="botao-link" target="_blank">Saiba Mais</a>
+                </div>
+                
+            </div>
+        </div>
+        <button class="prev" onclick="mudarImagem(-1)">&#10094;</button>
+        <button class="next" onclick="mudarImagem(+1)">&#10095;</button>
+    </div>
+    <footer>
+        <p>Descubra a beleza do nosso planeta</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
