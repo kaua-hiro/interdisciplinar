@@ -1,4 +1,9 @@
 /* Estilo geral */
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #e0f7fa;
@@ -33,13 +38,14 @@ h1 {
 }
 
 .imagens {
-    
+  
     display: flex;
     transition: transform 0.5s ease;
 
 }
 
-.imagem-container {   
+.imagem-container {
+    position: relative; 
     min-width: 100%;
 }
 
@@ -88,33 +94,38 @@ footer {
 
 footer p {
     margin: 0;
-} 
+}
+
 .texto-sobre-imagem {
-        position: absolute;
-        bottom: 60px;
-        left: 20px;
-        right: 20px;
-        color: white;
-        font-size: 1.2em;
-        text-align: justify;
-        background-color: rgba(0, 0, 0, 0.6);
-        padding: 10px;
-        border-radius: 5px;
-        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-        max-width: calc(100% - 40px);
-        }
-        .botao-link {
-            background-color: #00796b;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-size: 1.2em;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            transition: background-color 0.3s, transform 0.3s;
-        }
-        
-        .botao-link:hover {
-            background-color: #004d40;
-            transform: scale(1.05);
-        }
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
+    right: 20px;
+    color: white;
+    font-size: 1.2em;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    max-width: calc(100% - 40px);
+}
+
+
+
+.botao-link {
+    background-color: #00796b;
+    margin: 190px;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.botao-link:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}

@@ -1,36 +1,140 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Carrossel de Imagens - Natureza</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Beleza da Natureza</h1>
+      <h1>Beleza da Natureza</h1>
     </header>
     <div class="carrossel">
-        <div class="imagens">
-            <div class="imagem-container">
-                <img src="https://ibdn.org.br/wp-content/uploads/2021/01/bg-er.jpg" alt="Paisagem 1">
-            </div>
-            <div class="imagem-container">
-                <img src="https://ibdn.org.br/wp-content/uploads/2021/01/bg-neutro-carbono.jpg" alt="Paisagem 2">
-                <div class="texto-sobre-imagem">
-                    <p> O Selo Verde é um programa de Educação Ambiental para a Sustentabilidade Empresarial.  </p>
-                    <a href="https://ibdn.org.br/selo-empresa-parceira-da-natureza/" class="botao-link" target="_blank">Saiba Mais</a>
-                </div>
-                
-            </div>
+      <div class="imagens">
+        <div class="imagem-container">
+          <img
+            src="https://ibdn.org.br/wp-content/uploads/2021/01/Seed-iStock-bo1982-20170316.jpg"
+            alt="Paisagem 1"
+          />
+          <div class="texto-sobre-imagem">
+            <p>
+              O Selo Verde é um programa de Educação Ambiental para a
+              Sustentabilidade Empresarial.
+            </p>
+            <a
+              href="https://ibdn.org.br/selo-empresa-parceira-da-natureza/"
+              class="botao-link"
+              target="_blank"
+              >Saiba Mais</a
+            >
+          </div>
         </div>
-        <button class="prev" onclick="mudarImagem(-1)">&#10094;</button>
-        <button class="next" onclick="mudarImagem(+1)">&#10095;</button>
+        <div class="imagem-container">
+          <img
+            src="https://ibdn.org.br/wp-content/uploads/2021/01/bg-neutro-carbono.jpg"
+            alt="Paisagem 2"
+          />
+          <div class="texto-sobre-imagem">
+            <p>
+              Os Projetos de Neutralização de Carbono idealizados pelo IBDN, tem
+              como objetivo, colaborar com as empresas interessadas em diminuir
+              sua pegada de carbono no planeta.
+            </p>
+            <a
+              href="https://ibdn.org.br/selo-empresa-parceira-da-natureza/"
+              class="botao-link"
+              target="_blank"
+              >Saiba Mais</a
+            >
+          </div>
+        </div>
+        <div class="imagem-container">
+          <img
+            src="https://ibdn.org.br/wp-content/uploads/2021/01/bg-er.jpg"
+            alt="Paisagem 3"
+          />
+          <div class="texto-sobre-imagem">
+            <p>
+              O Selo ECORESPONSÁVEL é uma certificação criada exclusivamente
+              para o segmento de hotelaria.
+            </p>
+            <a
+              href="https://ibdn.org.br/selo-empresa-parceira-da-natureza/"
+              class="botao-link"
+              target="_blank"
+              >Saiba Mais</a
+            >
+          </div>
+        </div>
+        <div class="imagem-container">
+          <img
+            src="https://ibdn.org.br/wp-content/uploads/2021/01/bg-eergia-renovavel.jpg"
+            alt="Paisagem 4"
+          />
+          <div class="texto-sobre-imagem">
+            <p>
+              O Selo Energia Renovável é um programa de certificação ambiental
+              direcionado às empresas que, através da implantação de sistemas de
+              energia renovável (Solar ou Eólico), reduziram seus impactos ao
+              meio ambiente.
+            </p>
+            <a
+              href="https://ibdn.org.br/selo-empresa-parceira-da-natureza/"
+              class="botao-link"
+              target="_blank"
+              >Saiba Mais</a
+            >
+          </div>
+        </div>
+        <div class="imagem-container">
+          <img
+            src="https://ibdn.org.br/wp-content/uploads/2022/04/Design-sem-nome-2.png"
+            alt="Paisagem 5"
+          />
+          <div class="texto-sobre-imagem">
+            <p>
+              O Selo Produto Eco Sustentável é um programa de certificação
+              ambiental, cujo objetivo é identificar o produto que, através da
+              implantação de sistemas sustentáveis em seu processo produtivo
+            </p>
+            <a
+              href="https://ibdn.org.br/selo-empresa-parceira-da-natureza/"
+              class="botao-link"
+              target="_blank"
+              >Saiba Mais</a
+            >
+          </div>
+        </div>
+        <div class="imagem-container">
+          <img
+            src="https://ibdn.org.br/wp-content/uploads/2021/01/bg-bem-esatr-animal.jpg"
+            alt="Paisagem 1"
+          />
+          <div class="texto-sobre-imagem">
+            <p>
+              Desenvolvemos um treinamento baseado nas mais novas pesquisas e
+              publicações do ramo, com o objetivo de melhorar de forma direta o
+              manejo do gado de corte até seu abate da forma mais humanizada
+              possível.
+            </p>
+            <a
+              href="https://ibdn.org.br/selo-empresa-parceira-da-natureza/"
+              class="botao-link"
+              target="_blank"
+              >Saiba Mais</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <button class="prev" onclick="mudarImagem(-1)">&#10094;</button>
+      <button class="next" onclick="mudarImagem(+1)">&#10095;</button>
     </div>
     <footer>
-        <p>Descubra a beleza do nosso planeta</p>
+      <p>Descubra a beleza do nosso planeta</p>
     </footer>
     <script src="script.js"></script>
-</body>
-</html> 
+  </body>
+</html>
+<!-- https://ibdn.org.br/wp-content/uploads/2021/01/bg-er.jpg -->
