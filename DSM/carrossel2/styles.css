@@ -1,0 +1,114 @@
+/* Resetando margens e padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo geral da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container do carrossel */
+.carousel-container {
+  width: 80%;
+  max-width: 364px;
+  position: relative;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Container das imagens */
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Exibindo as imagens em linha */
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+/* Estilo das imagens */
+.carousel-images img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Navegação - setas e bolinhas */
+.carousel-nav {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+/* Setas de navegação */
+.arrow {
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  opacity: 0; /* Oculta as setas por padrão */
+  transition: opacity 0.3s ease;
+}
+
+.carousel-container:hover .arrow {
+  opacity: 1; /* Exibe as setas ao passar o mouse sobre o carrossel */
+}
+
+.arrow:hover {
+  color: #007bff;
+}
+
+/* Estilo das bolinhas */
+.dots {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #bbb;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #007bff;
+}
+
+/* Posicionamento das setas esquerda e direita */
+.left-arrow {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.right-arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}

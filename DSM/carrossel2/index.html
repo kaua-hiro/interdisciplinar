@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrossel com 6 Imagens</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="carousel-images">
+          <!-- Imagens do carrossel -->
+          <img
+            src="https://cdn.discordapp.com/attachments/1285019757971636227/1303755784437633104/escurecida.png?ex=672ce8b1&is=672b9731&hm=355ba9f4d81ed9d2036d24363f259002142189d2104d77cdc1dc572fa6d30fbb&"
+            alt="Imagem 1"
+          />
+          <img
+            src="https://cdn.discordapp.com/attachments/1285019757971636227/1303757157493248113/escurecida2.png?ex=672ce9f8&is=672b9878&hm=2a74d10c52b55d6583bae7569cfa1600887639456c086069157405bf0eb9ea77&"
+            alt="Imagem 2"
+          />
+          <img
+            src="https://cdn.discordapp.com/attachments/1285019757971636227/1303757158042570843/escurecida3.png?ex=672ce9f9&is=672b9879&hm=286544e10d2dc082a5cfc3ca4d9b92638d90a61ec34f2e3d6c6df18059a64f0d&"
+            alt="Imagem 3"
+          />
+          <img
+            src="https://cdn.discordapp.com/attachments/1285019757971636227/1303757158441287730/escurecida4.png?ex=672ce9f9&is=672b9879&hm=ddb4063426ce25c35500625541b7456cab1c299d55115a3470354f2a74268186&"
+            alt="Imagem 4"
+          />
+          <img
+            src="https://cdn.discordapp.com/attachments/1285019757971636227/1303757158952734720/escurecida5.png?ex=672ce9f9&is=672b9879&hm=87f1f940932b76cdcf2c22647793df8af58a9aaf0c28a73fabe0d7a3f1e7f6a0&"
+            alt="Imagem 5"
+          />
+          <img
+            src="https://cdn.discordapp.com/attachments/1285019757971636227/1303757156977217546/bg-bem-esatr-animal.jpg?ex=672ce9f8&is=672b9878&hm=e12543a372069354221a8a26f6800a9a3c81657c71b5f96d7ec571fb30e88721&"
+            alt="Imagem 6"
+          />
+        </div>
+        <!-- Navegação -->
+        <div class="carousel-nav">
+          <div class="arrow left-arrow" onclick="moveSlide(-1)">&#10094;</div>
+          <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+          </div>
+          <div class="arrow right-arrow" onclick="moveSlide(1)">&#10095;</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
